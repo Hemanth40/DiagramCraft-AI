@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply antialiased;
+    }
+}
+
+@layer utilities {
+    .gradient-text {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-blue-500 to-accent-400;
+    }
+
+    .glass {
+        @apply bg-white/10 backdrop-blur-xl border border-white/20;
+    }
+
+    .glass-dark {
+        @apply bg-black/20 backdrop-blur-xl border border-white/10;
+    }
+
+    .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientShift 8s ease infinite;
+    }
+}
