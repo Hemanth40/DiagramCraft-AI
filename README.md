@@ -121,8 +121,6 @@ npm start
 
 ---
 
-**Developed with ❤️ by DiagramCraft Team**
-
 
 
 
